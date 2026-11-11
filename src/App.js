@@ -6,6 +6,7 @@ import Register from "./components/Register";
 import Supporters from "./components/Supporters";
 import Team from "./components/Team";
 import Footer from "./components/Footer";
+import Recap from "./components/Recap";
 
 const App = () => {
 	return (
@@ -14,9 +15,7 @@ const App = () => {
 			<Hero />
 			<About />
 			<Supporters />
-			<NonProfits />
-			<Team />
-			<Register />
+			<Recap/>
 			<Footer />
 		</div>
 	);
