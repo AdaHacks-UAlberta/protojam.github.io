@@ -21,7 +21,7 @@ const Register = () => (
 					href="https://adasteam.ca/#/"
 					style={{ display: "inline-block", marginTop: "1.25rem" }}
 				>
-					Join our mailing list
+					Join our mailing list!
 				</a>
 				<p style={{ marginTop: "0.75rem" }}>
 					Get an email when AdaHacks 2027 registration opens. Alternatively, follow our Instagram or join our Discord server linked below for direct updates!
