@@ -18,10 +18,10 @@ const About = () => {
 				<article>
 					<h2>What is AdaHacks?</h2>
 					<p className="about-text">
-						AdaHacks is a 24-hour in-person hackathon dedicated to empowering women and gender-diverse individuals to grow as innovators, leaders, and creative-thinkers in a traditionally underrepresented industry. We aim to create a supportive environment where every hacker feels welcome.
+						AdaHacks is set to be a 48-hour in-person hackathon dedicated to empowering women and gender-diverse individuals to grow as innovators, leaders, and creative-thinkers in a traditionally underrepresented industry. We aim to create a supportive environment where every hacker feels welcome!
 					</p>
 					<p className="about-text">
-						Everyone, regardless of gender or experience level, is welcome to participate!
+						Everyone, regardless of gender or experience level, is welcome to participate.
 					</p>
 				</article>
 			</section>

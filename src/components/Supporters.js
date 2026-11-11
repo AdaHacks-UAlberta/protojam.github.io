@@ -1,13 +1,35 @@
-import divider from "../assets/dividers/divider_supporters.svg";
 import supporters from "../assets/supporters.json";
+import { ReactComponent as SupportersDivider } from "../assets/dividers/divider_supporters.svg";
 
 const Supporters = () => {
 	return (
 		<section className="Supporters" id="supporters">
 			<article className="max-width">
 				<h2 className="section-title">Supporters</h2>
+				<div className="supporter-callout">
+					<h3>Support AdaHacks 2027</h3>
+					<p>We’re looking for sponsors and partners to help make AdaHacks 2027 possible!</p>
+
+					<ul className="supporter-package-links">
+						<li>
+							<a 	href={`${process.env.PUBLIC_URL}/sponsor-partner-packages/adahacks-2027-sponsorship-package.pdf`} target="_blank" rel="noopener">
+								Sponsorship Package (PDF)
+							</a>
+						</li>
+						<li>
+							<a href={`${process.env.PUBLIC_URL}/sponsor-partner-packages/adahacks-2027-partnership-package.pdf`} target="_blank" rel="noopener">
+								Partnership Package (PDF)
+							</a>
+						</li>
+					</ul>
+
+					<a className="solid" href="mailto:adasteam@ualberta.ca?subject=Supporting%20AdaHacks%202027">
+						Email us!
+					</a>
+				</div>
+
 				<p className="section-description">
-					Special thanks to our wonderful supporters of AdaHacks!
+					A special thanks to our AdaHacks supporters, old and new!
 				</p>
 
 				{/* <h2 className="section-title">COMING SOON!</h2> */}
@@ -38,15 +60,9 @@ const Supporters = () => {
 						else return "";
 					})}
 				</ul>
-
-				<p className="description">
-					Would you like to support AdaHacks? <br />
-					{/* Feel free to <a href="mailto:protojam@adasteam.ca">contact</a> us, we'd love to have you! */}
-					Feel free to <a href="mailto:adasteam@ualberta.ca">contact</a> us, we'd love to have you!
-				</p>
 			</article>
 
-			<img className="divider" src={divider} aria-hidden="true" alt="" />
+		<SupportersDivider className="divider supporters-divider" aria-hidden="true" />
 		</section>
 	);
 };
