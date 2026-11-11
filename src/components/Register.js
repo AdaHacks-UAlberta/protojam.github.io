@@ -1,54 +1,34 @@
 import { useEffect } from "react";
 
-const Register = () => {
-	useEffect(() => {
-		const script = document.createElement("script");
-		const url = "https://www.eventbrite.com/static/widgets/eb_widgets.js";
-
-		script.src = url;
-		script.async = true;
-
-		document.body.appendChild(script);
-
-		const eventbriteInterval = setInterval(() => {
-			// if (window.EBWidgets) {
-			window.EBWidgets.createWidget({
-				// Required
-				widgetType: "checkout",
-				eventId: "823318797687",
-				iframeContainerId: "eventbrite-widget-container-823318797687",
-
-				// Optional
-				iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
-			});
-
-			clearInterval(eventbriteInterval);
-			// }
-		}, 1000);
-
-		return () => {
-			clearInterval(eventbriteInterval);
-			document.body.removeChild(script);
-		};
-	}, []);
-
-	return (
-		<section className="Register" id="register">
-			<article className="max-width">
-				<h2 className="section-title">Apply</h2>
-				<p className="section-description">
-					Join in on the fun for AdaHacks 2026!
-					<br />
-					Applications open until February 23 @ 11:59 PM MDT.
+const Register = () => (
+	<section className="Register" id="register" aria-labelledby="register-title">
+		<article className="max-width">
+			<div style={{
+				maxWidth: "48rem",
+				margin: "0 auto",
+				padding: "clamp(1.5rem, 5vw, 3rem)",
+				borderRadius: "1rem",
+				background: "white",
+				color: "var(--clr-primary-400)",
+				textAlign: "center",
+			}}>
+				<h2 id="register-title">Registration coming soon!</h2>
+				<p style={{ marginTop: "0.75rem" }}>
+					Something’s in the works for AdaHacks 2027...
 				</p>
-				<p className="section-description">
-					Apply here: {" "}
-					<a href="https://bit.ly/adahacks2026">Application Link</a>.
+				<a
+					className="solid"
+					href="https://adasteam.ca/#/"
+					style={{ display: "inline-block", marginTop: "1.25rem" }}
+				>
+					Join our mailing list
+				</a>
+				<p style={{ marginTop: "0.75rem" }}>
+					Get an email when AdaHacks 2027 registration opens. Alternatively, follow our Instagram or join our Discord server linked below for direct updates!
 				</p>
-				{/* <div className="eventbrite" id="eventbrite-widget-container-823318797687"></div> */}
-			</article>
-		</section>
-	);
-};
+			</div>
+		</article>
+	</section>
+);
 
 export default Register;

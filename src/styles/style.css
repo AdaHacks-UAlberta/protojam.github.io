@@ -579,6 +579,51 @@ a.solid:hover, a.solid:focus {
   color: var(--clr-primary-100);
 }
 
+.Supporters > .supporters-divider {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: -3px;
+}
+
+.Supporters > .supporters-divider path[fill="white"] {
+  fill: var(--clr-primary-100);
+}
+
+.Supporters .supporter-callout {
+  max-width: 42rem;
+  margin: 1.5rem auto 2.5rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border-radius: 1rem;
+  background: var(--clr-primary-100);
+  color: var(--clr-primary-400);
+  text-align: center;
+}
+
+.Supporters .supporter-callout h3 {
+  font-size: var(--fs-300);
+  margin-bottom: 0.5rem;
+}
+
+.Supporters .supporter-callout .solid {
+  display: inline-block;
+}
+
+.Supporters .supporter-package-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.25rem;
+}
+
+.Supporters .supporter-package-links a {
+  color: inherit;
+  font-weight: 600;
+}
+
 .NonProfits :root {
   --clr-light-100: #ffffff;
   --clr-primary-100: #c996cc;

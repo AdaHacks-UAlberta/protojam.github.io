@@ -7,8 +7,7 @@ const NavBar = () => {
 	const navLinks = [
 		{ navLink: "#about", name: "About" },
 		{ navLink: "#supporters", name: "Supporters" },
-		{ navLink: "#nonprofits", name: "Non-Profits" },
-		{ navLink: "#team", name: "Team" },
+		{ navLink: "#recap", name: "AdaHacks 2026" },
 		{ navLink: "#register", name: "Register", solid: true },
 	];
 
