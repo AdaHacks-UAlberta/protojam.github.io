@@ -8,10 +8,7 @@ const Recap = () => (
 		className="Register"
 		id="recap"
 		aria-labelledby="recap-title"
-		style={{
-            background: "var(--clr-primary-100)", // #c996cc
-            color: "var(--clr-primary-400)",
-            scrollMarginTop: "5rem",
+		style={{background: "var(--clr-primary-100)", color: "var(--clr-primary-400)", scrollMarginTop: "5rem",
 		}}
 	>
 		<article className="max-width">
