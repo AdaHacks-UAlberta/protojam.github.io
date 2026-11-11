@@ -401,6 +401,15 @@ a.solid:hover, a.solid:focus {
   font-family: var(--font-accent);
 }
 
+.Hero .hero-content article a.solid {
+  display: inline-block;
+}
+
+.Hero .hero-content article p.hero-signup-note {
+  font-size: var(--fs-100);
+  margin-top: 0.5rem;
+}
+
 .About :root {
   --clr-light-100: #ffffff;
   --clr-primary-100: #c996cc;
