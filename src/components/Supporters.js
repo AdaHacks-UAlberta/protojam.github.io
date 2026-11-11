@@ -12,12 +12,12 @@ const Supporters = () => {
 
 					<ul className="supporter-package-links">
 						<li>
-							<a href={`${process.env.PUBLIC_URL}/sponsor-partner-packages/adahacks-2027-sponsorship-package.pdf`}>
+							<a 	href={`${process.env.PUBLIC_URL}/sponsor-partner-packages/adahacks-2027-sponsorship-package.pdf`} target="_blank" rel="noopener">
 								Sponsorship Package (PDF)
 							</a>
 						</li>
 						<li>
-							<a href={`${process.env.PUBLIC_URL}/sponsor-partner-packages/adahacks-2027-partnership-package.pdf`}>
+							<a href={`${process.env.PUBLIC_URL}/sponsor-partner-packages/adahacks-2027-partnership-package.pdf`} target="_blank" rel="noopener">
 								Partnership Package (PDF)
 							</a>
 						</li>
